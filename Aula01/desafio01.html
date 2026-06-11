@@ -9,21 +9,32 @@
     <meta name="author" content="Allan, @allanmoreira">
     <link rel="icon" type="image/jpeg" href="img/favicon.jpeg">
     <link rel="stylesheet" href="css/style.css">
-    <title>Exercicio 01 - JAVASCRIPT</title>
+    <title>DESAFIO 01 - JAVASCRIPT</title>
 </head>
 
 <body>
-    <h1>OLÁ MUNDO EM JS: <mark>ALERT</mark></h1>
+    <h1>DESAFIO_01 <mark>ALERT</mark></h1>
     <hr>
     <script>
         window.alert("Seja bem-vindo ao site");
         let numero = parseInt(window.prompt("Digite o primeiro número"))
         console.log(numero)
-        window.alert("Seja bem-vindo ao site");
         let numero2 = parseInt(window.prompt("Digite o segundo número"))
         console.log(numero2)
+        let resposta = window.confirm("Deseja obter o resultado? ")
+        let resultado = 0
+
+        if(resposta==true){
+            resultado = (numero + numero2)
+            console.log("o resultado da sua soma é: " +resultado)
+        }
+        else{
+            window.confirm = ("Agora vamos subtrair")
+            resultado = (numero - numero2)
+            console.log("o resultado da sua subtração é: " -resultado)  
+        }
+        window.alert("O seu resultado é: " +resultado)
     </script>
 
 </body>
-
 </html>
