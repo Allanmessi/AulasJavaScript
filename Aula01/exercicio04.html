@@ -11,22 +11,24 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Exercicio 04 - JAVASCRIPT</title>
 </head>
+
 <body>
     <h1>Integrando os recursos de interatividade do JS</h1>
     <hr>
     <script>
         window.alert("Seja bem-vindo ao site");
-        let nome = window.prompt("QUAL SEU NOME? ");
-
-        console.log(nome);
+        let name = window.prompt("QUAL SEU NOME? ");
+        window.alert(name);
+        console.log(name);
         let resposta = window.confirm("Você deseja sair da página? ");
         console.log(resposta);
-        if(resposta==true){
+        if (resposta == true) {
             window.close()
-        }else{
-            window.alert("Aproveite meu site, " +nome);
+        } else {
+            window.alert("Aproveite meu site, " + name);
         }
     </script>
 
 </body>
+
 </html>
